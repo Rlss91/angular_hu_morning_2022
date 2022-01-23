@@ -7,6 +7,13 @@ export interface Animal {
   zanav: boolean;
 }
 
+export enum PulotHeshbon {
+  ADD, // +
+  SUB, // -
+  MUL, // *
+  DIV, // /
+}
+
 export interface IFunction {
   importantFunction(arg1: number): void;
 }
@@ -21,6 +28,10 @@ export class AppComponent implements IFunction {
     throw new Error('Method not implemented.');
   }
   title = 'firstAngularApp';
+  oneMore: string;
+  constructor() {
+    this.oneMore = '';
+  }
   ahah(beemet: string, num: number, loyodaat: boolean): string {
     let mispar: number = 5;
     // let mispar = 5;
@@ -66,5 +77,28 @@ export class AppComponent implements IFunction {
       default:
         return num1 + num2;
     }
+  }
+
+  calcEnum(num1: number, num2: number, opr: PulotHeshbon): number {
+    switch (opr) {
+      case PulotHeshbon.SUB:
+        return num1 - num2;
+      case PulotHeshbon.MUL:
+        return num1 * num2;
+      case PulotHeshbon.DIV:
+        if (num2 === 0) {
+          return NaN;
+        } else {
+          return num1 / num2;
+        }
+      case PulotHeshbon.ADD:
+      default:
+        return num1 + num2;
+    }
+  }
+
+  newCalc(): void {
+    let resolt: number;
+    resolt = this.calcEnum(1, 1, PulotHeshbon.MUL);
   }
 }
