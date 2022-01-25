@@ -1,0 +1,13 @@
+<p>class-directive works!</p>
+<!-- <button type="button" class="btn btn-primary">kaftor</button> -->
+<button
+  type="button"
+  [ngClass]="{
+    btn: true,
+    'btn-primary': primaryOrDanger,
+    'btn-danger': !primaryOrDanger
+  }"
+  (click)="handleBtnClick()"
+>
+  kaftor
+</button>
