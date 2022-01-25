@@ -1,4 +1,8 @@
 <div class="container">
   <app-navbar></app-navbar>
-  <h1>hello world</h1>
+  <h1>{{ title }}</h1>
+  <input type="text" (keydown)="handleTxtKeyDown($event)" />
+  <button type="button" class="btn btn-primary" (click)="handleBtnClick()">
+    Primary
+  </button>
 </div>
