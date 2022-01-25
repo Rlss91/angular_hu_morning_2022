@@ -1,0 +1,124 @@
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Username"
+    aria-label="Username"
+    aria-describedby="basic-addon1"
+    [value]="line"
+  />
+</div>
+<div class="container-calcuator">
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(0)"
+  >
+    0
+  </button>
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(1)"
+  >
+    1
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(2)"
+  >
+    2
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(3)"
+  >
+    3
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(4)"
+  >
+    4
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(5)"
+  >
+    5
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(6)"
+  >
+    6
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(7)"
+  >
+    7
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(8)"
+  >
+    8
+  </button>
+
+  <button
+    type="button"
+    class="btn btn-light item-9"
+    (click)="handleNumberButtonClick(9)"
+  >
+    9
+  </button>
+</div>
+<div class="container-calcuator">
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleOperationButtonClick('+')"
+  >
+    +
+  </button>
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleOperationButtonClick('-')"
+  >
+    -
+  </button>
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleOperationButtonClick('*')"
+  >
+    *
+  </button>
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleOperationButtonClick('/')"
+  >
+    /
+  </button>
+  <button type="button" class="btn btn-light" (click)="handleCalcButtonClick()">
+    =
+  </button>
+</div>

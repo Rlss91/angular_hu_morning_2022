@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string;
+  inputValue: string;
   constructor() {
     this.title = 'Hello world from ts';
+    this.inputValue = 'testt';
   }
   handleBtnClick(): void {
     console.log('handleBtnClick()');

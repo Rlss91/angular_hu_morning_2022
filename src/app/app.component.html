@@ -1,8 +1,14 @@
 <div class="container">
   <app-navbar></app-navbar>
-  <h1>{{ title }}</h1>
-  <input type="text" (keydown)="handleTxtKeyDown($event)" />
+  <!-- <h1>{{ title }}</h1>
+  <input
+    type="text"
+    (keydown)="handleTxtKeyDown($event)"
+    [(ngModel)]="inputValue"
+  />
+  <p [innerText]="inputValue"></p>
   <button type="button" class="btn btn-primary" (click)="handleBtnClick()">
     Primary
-  </button>
+  </button> -->
+  <app-calculator></app-calculator>
 </div>
