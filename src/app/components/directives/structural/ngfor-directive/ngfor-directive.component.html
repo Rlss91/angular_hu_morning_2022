@@ -1,0 +1,18 @@
+<p>ngfor-directive works!</p>
+<button
+  type="button"
+  class="btn btn-light"
+  *ngFor="let item of arrOfNumber"
+  (click)="handleNumberButtonClick(item)"
+>
+  {{ item }}
+</button>
+<hr />
+<button
+  type="button"
+  class="btn btn-light"
+  *ngFor="let item of listName; index as i"
+  (click)="handleNameButtonClick(i)"
+>
+  {{ i }}|{{ item }}
+</button>

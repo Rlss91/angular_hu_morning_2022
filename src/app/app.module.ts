@@ -7,9 +7,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { ClassDirectiveComponent } from './components/directives/attribute/class-directive/class-directive.component';
 import { StyleDirectiveComponent } from './components/directives/attribute/style-directive/style-directive.component';
+import { NgifDirectiveComponent } from './components/directives/structural/ngif-directive/ngif-directive.component';
+import { NgforDirectiveComponent } from './components/directives/structural/ngfor-directive/ngfor-directive.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, CalculatorComponent, ClassDirectiveComponent, StyleDirectiveComponent],
+  declarations: [AppComponent, NavbarComponent, CalculatorComponent, ClassDirectiveComponent, StyleDirectiveComponent, NgifDirectiveComponent, NgforDirectiveComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
