@@ -1,0 +1,37 @@
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Username"
+    aria-label="Username"
+    aria-describedby="basic-addon1"
+    [value]="line"
+  />
+</div>
+<div class="container-calcuator">
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleNumberButtonClick(num)"
+    [ngClass]="{
+      'item-0': num === 0
+    }"
+    *ngFor="let num of numbersArr"
+  >
+    {{ num }}
+  </button>
+</div>
+<div class="container-calcuator">
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleOperationButtonClick(op)"
+    *ngFor="let op of operatorsArr"
+  >
+    {{ op }}
+  </button>
+  <button type="button" class="btn btn-light" (click)="handleCalcButtonClick()">
+    =
+  </button>
+</div>
