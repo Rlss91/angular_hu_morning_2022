@@ -31,7 +31,12 @@
   >
     {{ op }}
   </button>
-  <button type="button" class="btn btn-light" (click)="handleCalcButtonClick()">
+  <button
+    type="button"
+    class="btn btn-light"
+    (click)="handleCalcButtonClick()"
+    [disabled]="!canCalc()"
+  >
     =
   </button>
 </div>

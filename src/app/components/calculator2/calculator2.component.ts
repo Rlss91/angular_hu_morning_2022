@@ -61,7 +61,7 @@ export class Calculator2Component implements OnInit {
         this.result = this.num1 / this.num2;
         break;
     }
-    this.num1 = NaN;
+    this.num1 = this.result;
     this.num2 = NaN;
     this.operator = '';
     this.line = this.result + '';
@@ -78,5 +78,9 @@ export class Calculator2Component implements OnInit {
     if (!isNaN(this.num2)) {
       this.line += this.num2;
     }
+  }
+
+  canCalc(): boolean {
+    return !isNaN(this.num1) && this.operator != '' && !isNaN(this.num2);
   }
 }
