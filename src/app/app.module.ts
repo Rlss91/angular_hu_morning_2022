@@ -11,6 +11,9 @@ import { NgifDirectiveComponent } from './components/directives/structural/ngif-
 import { NgforDirectiveComponent } from './components/directives/structural/ngfor-directive/ngfor-directive.component';
 import { Calculator2Component } from './components/calculator2/calculator2.component';
 import { NgswitchDirectiveComponent } from './components/directives/structural/ngswitch-directive/ngswitch-directive.component';
+import { FatherComponent } from './components/fcc/father/father.component';
+import { ChildComponent } from './components/fcc/child/child.component';
+import { MybuttonComponent } from './components/mybutton/mybutton.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { NgswitchDirectiveComponent } from './components/directives/structural/n
     NgforDirectiveComponent,
     Calculator2Component,
     NgswitchDirectiveComponent,
+    FatherComponent,
+    ChildComponent,
+    MybuttonComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

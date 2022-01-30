@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ user.email }}</h6>
+    <p class="card-text">{{ user.description }}</p>
+    <button type="button" class="btn btn-success">Success</button>
+    <button
+      type="button"
+      class="btn btn-warning"
+      (click)="handleDeleteBtnClick()"
+    >
+      Warning
+    </button>
+  </div>
+</div>

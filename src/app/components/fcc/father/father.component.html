@@ -1,0 +1,20 @@
+<p>father works!</p>
+<!-- <div class="card" style="width: 18rem" *ngFor="let user of usersArr">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ user.email }}</h6>
+    <p class="card-text">{{ user.description }}</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div> -->
+<!-- <app-mybutton
+  [classes]="BtnColors.danger"
+  (onBtnClick)="handleBtnClick()"
+></app-mybutton> -->
+<!-- <button (click)="handleBtnClick()"></button> -->
+<app-child
+  *ngFor="let userItem of usersArr"
+  [user]="userItem"
+  (onDelete)="handleItemDelete($event)"
+></app-child>
