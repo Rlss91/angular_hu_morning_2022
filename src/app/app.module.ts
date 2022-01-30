@@ -10,9 +10,20 @@ import { StyleDirectiveComponent } from './components/directives/attribute/style
 import { NgifDirectiveComponent } from './components/directives/structural/ngif-directive/ngif-directive.component';
 import { NgforDirectiveComponent } from './components/directives/structural/ngfor-directive/ngfor-directive.component';
 import { Calculator2Component } from './components/calculator2/calculator2.component';
+import { NgswitchDirectiveComponent } from './components/directives/structural/ngswitch-directive/ngswitch-directive.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, CalculatorComponent, ClassDirectiveComponent, StyleDirectiveComponent, NgifDirectiveComponent, NgforDirectiveComponent, Calculator2Component],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    CalculatorComponent,
+    ClassDirectiveComponent,
+    StyleDirectiveComponent,
+    NgifDirectiveComponent,
+    NgforDirectiveComponent,
+    Calculator2Component,
+    NgswitchDirectiveComponent,
+  ],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

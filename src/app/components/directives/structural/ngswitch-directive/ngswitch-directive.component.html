@@ -1,0 +1,13 @@
+<p>ngswitch-directive works!</p>
+<ul class="list-group" [ngSwitch]="number">
+  <li class="list-group-item" *ngSwitchCase="1">An item</li>
+  <li class="list-group-item" *ngSwitchCase="2">A second item</li>
+  <li class="list-group-item" *ngSwitchCase="3">A third item</li>
+  <li class="list-group-item" *ngSwitchCase="4">A fourth item</li>
+  <li class="list-group-item" *ngSwitchCase="5">And a fifth one</li>
+  <li class="list-group-item" *ngSwitchDefault>A default item</li>
+</ul>
+<button type="button" class="btn btn-primary" (click)="handleBtnClick()">
+  ++
+</button>
+<p>{{ number }}</p>
