@@ -1,0 +1,6 @@
+<p>t1father works!</p>
+<app-t1child
+  *ngFor="let user of usersArr"
+  [user]="user"
+  (onItemClick)="handleItemClicked($event)"
+></app-t1child>

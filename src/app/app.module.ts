@@ -14,6 +14,8 @@ import { NgswitchDirectiveComponent } from './components/directives/structural/n
 import { FatherComponent } from './components/fcc/father/father.component';
 import { ChildComponent } from './components/fcc/child/child.component';
 import { MybuttonComponent } from './components/mybutton/mybutton.component';
+import { T1fatherComponent } from './components/targil1/t1father/t1father.component';
+import { T1childComponent } from './components/targil1/t1child/t1child.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { MybuttonComponent } from './components/mybutton/mybutton.component';
     FatherComponent,
     ChildComponent,
     MybuttonComponent,
+    T1fatherComponent,
+    T1childComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
