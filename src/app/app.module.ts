@@ -20,6 +20,8 @@ import { CustomHighLight1Directive } from './directives/custom-high-light1.direc
 import { CustomHighLight2Directive } from './directives/custom-high-light2.directive';
 import { CustomHighLight3Directive } from './directives/custom-high-light3.directive';
 import { CustomDirectiveComponentComponent } from './components/directives/custom-directive-component/custom-directive-component.component';
+import { LifeCycleHooksContainerComponent } from './components/life-cycle-hooks-container/life-cycle-hooks-container.component';
+import { LifeCycleHooksChildComponent } from './components/life-cycle-hooks-child/life-cycle-hooks-child.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { CustomDirectiveComponentComponent } from './components/directives/custo
     CustomHighLight2Directive,
     CustomHighLight3Directive,
     CustomDirectiveComponentComponent,
+    LifeCycleHooksContainerComponent,
+    LifeCycleHooksChildComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

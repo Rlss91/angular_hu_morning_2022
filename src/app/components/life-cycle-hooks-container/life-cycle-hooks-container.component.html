@@ -1,0 +1,10 @@
+<p>life-cycle-hooks-container works!</p>
+<button type="button" class="btn btn-primary" (click)="handleBtnClick()">
+  Primary
+</button>
+<button type="button" class="btn btn-info" (click)="handleBtnToggle()">
+  Info
+</button>
+<app-life-cycle-hooks-child *ngIf="toggleFlag" [toggle]="childToggle"
+  >fdgfdggdfg</app-life-cycle-hooks-child
+>
