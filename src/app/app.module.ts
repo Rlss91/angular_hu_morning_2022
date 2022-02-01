@@ -22,6 +22,9 @@ import { CustomHighLight3Directive } from './directives/custom-high-light3.direc
 import { CustomDirectiveComponentComponent } from './components/directives/custom-directive-component/custom-directive-component.component';
 import { LifeCycleHooksContainerComponent } from './components/life-cycle-hooks-container/life-cycle-hooks-container.component';
 import { LifeCycleHooksChildComponent } from './components/life-cycle-hooks-child/life-cycle-hooks-child.component';
+import { UserListComponent } from './components/service/user-list/user-list.component';
+import { UserFormComponent } from './components/service/user-form/user-form.component';
+import { UserServiceContainerComponent } from './components/service/user-service-container/user-service-container.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { LifeCycleHooksChildComponent } from './components/life-cycle-hooks-chil
     CustomDirectiveComponentComponent,
     LifeCycleHooksContainerComponent,
     LifeCycleHooksChildComponent,
+    UserListComponent,
+    UserFormComponent,
+    UserServiceContainerComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
