@@ -16,6 +16,10 @@ import { ChildComponent } from './components/fcc/child/child.component';
 import { MybuttonComponent } from './components/mybutton/mybutton.component';
 import { T1fatherComponent } from './components/targil1/t1father/t1father.component';
 import { T1childComponent } from './components/targil1/t1child/t1child.component';
+import { CustomHighLight1Directive } from './directives/custom-high-light1.directive';
+import { CustomHighLight2Directive } from './directives/custom-high-light2.directive';
+import { CustomHighLight3Directive } from './directives/custom-high-light3.directive';
+import { CustomDirectiveComponentComponent } from './components/directives/custom-directive-component/custom-directive-component.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,10 @@ import { T1childComponent } from './components/targil1/t1child/t1child.component
     MybuttonComponent,
     T1fatherComponent,
     T1childComponent,
+    CustomHighLight1Directive,
+    CustomHighLight2Directive,
+    CustomHighLight3Directive,
+    CustomDirectiveComponentComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
