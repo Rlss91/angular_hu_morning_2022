@@ -14,5 +14,24 @@ export class UserListComponent implements OnInit {
     this.usersArr = this.dataService.usersArr;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    //addEventListener or on (nodejs)
+    this.dataService.onUsersArrChanged.subscribe((usersArr) => {
+      this.usersArr = usersArr;
+    });
+  }
+
+  handleDelete(id: number): void {
+    console.log('id', id);
+    //! this will not delete data from service
+    // this.usersArr = this.usersArr.filter((item) => item.id != id);
+    //* the good way//
+    this.dataService.removeItemFromUsersArr(id);
+    // this.usersArr = this.dataService.usersArr;
+    console.log('service user arr', this.dataService.usersArr);
+  }
+
+  // handleDelete(user1: User1):void{
+  //   console.log("user1", user1)
+  // }
 }

@@ -1,1 +1,6 @@
 <p>user-list works!</p>
+<app-child
+  *ngFor="let userItem of usersArr"
+  [user]="userItem"
+  (onDelete)="handleDelete($event)"
+></app-child>
